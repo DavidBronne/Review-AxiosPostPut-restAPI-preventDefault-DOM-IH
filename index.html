@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Axios - POST, PATCH &amp; PUT </title>
+  </head>
+
+  <body>
+
+<!-- Iteration 2 -->
+    
+                      <!-- Add Character -->
+
+    <h3 id="add-char"> Post a new character </h3>
+    <!-- Use of form tag on submit -->
+    <form id="character-form">                          
+        <div>
+            <label for="the-name-input"> Name: </label>
+            <input type="text" name="name" class="the-name">
+        </div>
+
+        <div>
+            <label for="the-occupation-input"> Occupation: </label>
+            <input type="text" name="occupation" class="the-occupation">
+        </div>
+
+        <div>
+            <label for="the-weapon-input"> Weapon: </label>
+            <input type="text" name="weapon" class="the-weapon">
+        </div>
+
+        <button> Save </button>
+    </form>
+
+    <ul id="characters-list"></ul>
+
+
+                      <!-- Update Character -->
+
+    <p>Which character you would like to update? Input its id: 
+        <input type="text" name="" id="theCharId">
+        <button type="submit" id="getButton">Get the character</button>
+    </p>
+    <div id="updateForm">
+        <h3 id="update-char"> Update a character </h3>
+      
+        <form id="update-form">
+        <div>
+            <label for="update-name-input"> Name: </label>
+            <input type="text" name="name" class="the-name">
+        </div>
+
+        <div>
+            <label for="update-occupation-input"> Occupation: </label>
+            <input type="text" name="occupation" class="the-occupation">
+        </div>
+
+        <div>
+            <label for="update-weapon-input"> Weapon: </label>
+            <input type="text" name="weapon" class="the-weapon">
+        </div>
+
+        <div>
+            <label for="character-id-input"> Character ID: </label>
+            <input type="text" name="characterId" id="character-id-input">
+        </div>
+
+        <button> Update </button>
+        </form>
+    </div>
+
+
+
+<!-- Iteration 1 -->
+    <!-- <h1> Axios AJAX - POST, PATCH &amp; PUT </h1>
+    <button id="post-wall-e"> Post WALL-E </button>
+    <ul id="characters-list"></ul> -->
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
